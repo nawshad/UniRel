@@ -21,7 +21,7 @@ from transformers import EvalPrediction, set_seed
 from dataprocess.data_processor import UniRelDataProcessor
 from dataprocess.dataset import UniRelDataset, UniRelSpanDataset
 
-from model.model_transformers import  UniRelModel
+from model.model_transformers import UniRelModel
 from dataprocess.data_extractor import *
 from dataprocess.data_metric import *
 
@@ -74,12 +74,12 @@ InputFeature = collections.namedtuple(
 
 logger = transformers.utils.logging.get_logger(__name__)
 
+
 class MyCallback(transformers.TrainerCallback):
     "A callback that prints a message at the beginning of training"
 
     def on_epoch_begin(self, args, state, control, **kwargs):
         print("Epoch start")
-
 
     def on_epoch_end(self, args, state, control, **kwargs):
         print("Epoch end")
@@ -274,10 +274,8 @@ if __name__ == '__main__':
     config.is_separate_ablation = run_args.is_separate_ablation
     config.test_data_type = run_args.test_data_type
 
-
     model = ModelType(config=config, model_dir=run_args.model_dir)
     model.resize_token_embeddings(len(tokenizer))
-
    
     if training_args.do_train:
         trainer = Trainer(

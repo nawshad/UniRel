@@ -12,10 +12,10 @@ python3 run.py \
     --save_steps 5000 \
     --evaluation_strategy steps \
     --warmup_ratio 0.1 \
-    --model_dir ./bert-base-cased/ \
+    --model_dir ./data/bert-base-cased/snapshots/cd5ef92a9fb2f889e972770a36d4ed042daf221e \
     --output_dir ./output/nyt \
     --overwrite_output_dir \
-    --dataset_dir YourDataDir \
+    --dataset_dir data \
     --dataloader_pin_memory \
     --dataloader_num_workers 4 \
     --lr_scheduler_type cosine \

@@ -23,13 +23,15 @@ def save_dict(dict, name):
 def remove_stress_mark(text):
     text = "".join([c for c in unicodedata.normalize("NFD", text) if unicodedata.category(c) != "Mn"])
     return text
- 
+
+
 def change_case(str):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', str)
     s2 = re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1)
     return re.sub(r'[^\w\s]','',s2)
-
 # Driver code
+
+
 class UniRelDataProcessor(object):
     def __init__(self,
                  root,
