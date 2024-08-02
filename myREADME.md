@@ -11,3 +11,5 @@
  - edit run_nyt.sh 
    - --model_dir ./data/bert-base-cased/snapshots/cd5ef92a9fb2f889e972770a36d4ed042daf221e
    - --dataset_name nyt
+ ###TODO:
+   - Use the prediction model to predict relations.
