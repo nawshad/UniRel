@@ -41,7 +41,7 @@ You can also download the data from [here](https://drive.google.com/file/d/1-3uB
 
 ## Pretrained Model
 
-We use the `bert-base-cased` model from Huggingface, you can download it by following their [instrcution](https://huggingface.co/bert-base-cased?text=The+goal+of+life+is+%5BMASK%5D.) or let Transformers to automatically download. After that, place the files at the root directory of the project (`./bert-base-cased`).
+We use the `bert-base-cased` model from Huggingface, you can download it by following their [instruction](https://huggingface.co/bert-base-cased?text=The+goal+of+life+is+%5BMASK%5D.) or let Transformers to automatically download. After that, place the files at the root directory of the project (`./bert-base-cased`).
 
 I provided a checkpoint for trying `predict`. You can download [here](https://drive.google.com/drive/folders/1poRbtpm5ddbwUk3mVQ2-4G_o3OPXjYNq?usp=sharing).
 

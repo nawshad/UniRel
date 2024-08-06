@@ -10,10 +10,10 @@
  - put data and model in data directory.
  - Go to /home/nawshad/.cache/huggingface/hub/models--bert-base-cased
  - edit run_nyt.sh 
-   - --model_dir ./data/bert-base-cased/snapshots/cd5ef92a9fb2f889e972770a36d4ed042daf221e
-   - --dataset_name nyt
- ###TODO:
-   - Use the prediction model to predict relations.
+   - model_dir: ./data/bert-base-cased/snapshots/cd5ef92a9fb2f889e972770a36d4ed042daf221e
+   - dataset_name: nyt
+   #### TODO:
+     - Understand the training process in details.
 
 ### Inference:
-- TODO: figure out how the inference works.
+   - Use the prediction model to predict relations. [DONE]
